@@ -30,4 +30,8 @@ describe('BNW parser', function () {
   it('should replace wrapped in ``` text to code', function () {
     bnwity('```\nжопа = сука(хер);\n```').should.equal('<pre><code>жопа = сука(хер);</code>\n</pre>');
   });
+
+  it('should replace wrapped in ` text to inline code block', function () {
+    bnwity('жопа `сука` хер').should.equal('<p>жопа <code>сука</code> хер</p>');
+  });
 });

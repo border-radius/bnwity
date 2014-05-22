@@ -9,4 +9,8 @@ describe('Inline parser', function () {
   it('should parse italic', function () {
     inlinify('*italic*').should.equal('<em>italic</em>');
   });
+
+  it('should parse inline code block', function () {
+    inlinify('`code`').should.equal('<code>code</code>');
+  });
 });

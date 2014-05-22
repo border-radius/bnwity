@@ -14,7 +14,7 @@ Roadmap
  - ~~nested blockquotes~~
  - ~~code blocks indentated with 4 spaces~~
  - ~~code blocks wrapped into 3 grave accents~~
- - inline codeblocks wrapped into grave accent
+ - ~~inline codeblocks wrapped into grave accent~~
  - automatic URL markup
  - `[text](url)` markup
  - `[text][*]` and `[*]: link` markup

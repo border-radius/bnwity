@@ -1,0 +1,27 @@
+{
+  "name": "bnwity",
+  "version": "0.0.0",
+  "description": "A gorgeous, opinionated BnW formatting library hand-delivered to your microblog every post",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/border-radius/bnwity.git"
+  },
+  "author": "border-radius",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/border-radius/bnwity/issues"
+  },
+  "homepage": "https://github.com/border-radius/bnwity",
+  "devDependencies": {
+    "mocha": "^1.19.0",
+    "should": "^3.3.1"
+  },
+  "dependencies": {
+    "marked": "^0.3.2",
+    "underscore": "^1.6.0"
+  }
+}

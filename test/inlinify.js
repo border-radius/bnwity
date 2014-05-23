@@ -20,5 +20,6 @@ describe('Inline parser', function () {
 
   it('should parse links', function () {
     inlinify('https://bnw.im').should.equal('<a href="https://bnw.im">https://bnw.im</a>');
+    inlinify('[bnw](https://bnw.im)').should.equal('<a href="https://bnw.im">bnw</a>');
   });
 });

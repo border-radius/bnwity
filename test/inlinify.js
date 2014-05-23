@@ -13,4 +13,8 @@ describe('Inline parser', function () {
   it('should parse inline code block', function () {
     inlinify('`code`').should.equal('<code>code</code>');
   });
+
+  it('should not parse tags as italic', function () {
+    inlinify('*жж *прекрасное').should.equal('*жж *прекрасное');
+  });
 });

@@ -17,4 +17,8 @@ describe('Inline parser', function () {
   it('should not parse tags as italic', function () {
     inlinify('*жж *прекрасное').should.equal('*жж *прекрасное');
   });
+
+  it('should parse links', function () {
+    inlinify('https://bnw.im').should.equal('<a href="https://bnw.im">https://bnw.im</a>');
+  });
 });

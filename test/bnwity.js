@@ -34,4 +34,8 @@ describe('BNW parser', function () {
   it('should replace wrapped in ` text to inline code block', function () {
     bnwity('жопа `сука` хер').should.equal('<p>жопа <code>сука</code> хер</p>');
   });
+
+  it('should replace links with references', function () {
+    bnwity('рейт [ми][*], бнвач\n[*]: https://therailway.ru').should.equal('<p>рейт <a href="https://therailway.ru">ми</a>, бнвач</p>');
+  });
 });

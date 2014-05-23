@@ -17,7 +17,7 @@ Roadmap
  - ~~inline codeblocks wrapped into grave accent~~
  - ~~automatic URL markup~~
  - ~~`[text](url)` markup~~
- - `[text][*]` and `[*]: link` markup
+ - ~~`[text][*]` and `[*]: link` markup~~
  - static image previews
  - gif previews
  - youtube video previews

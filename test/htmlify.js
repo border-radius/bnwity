@@ -36,7 +36,7 @@ describe('HTML generator', function () {
 
 
   it('should generate codeblocks', function () {
-    var expectation = '<pre><code>some code</code>\n</pre>';
+    var expectation = '<pre><code>some code</code></pre>';
 
     var reality = htmlify([
       {

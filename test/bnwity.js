@@ -24,11 +24,11 @@ describe('BNW parser', function () {
   });
 
   it('should replace 4 spaces to codeblock', function () {
-    bnwity('    змеиться();').should.equal('<pre><code>змеиться();</code>\n</pre>');
+    bnwity('    змеиться();').should.equal('<pre><code>змеиться();</code></pre>');
   });
 
   it('should replace wrapped in ``` text to code', function () {
-    bnwity('```\nжопа = сука(хер);\n```').should.equal('<pre><code>жопа = сука(хер);</code>\n</pre>');
+    bnwity('```\nжопа = сука(хер);\n```').should.equal('<pre><code>жопа = сука(хер);</code></pre>');
   });
 
   it('should replace wrapped in ` text to inline code block', function () {

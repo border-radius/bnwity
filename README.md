@@ -18,7 +18,9 @@ Roadmap
  - ~~automatic URL markup~~
  - ~~`[text](url)` markup~~
  - ~~`[text][*]` and `[*]: link` markup~~
- - static image previews
- - gif previews
- - youtube video previews
- - vimeo video previews
+ - ~~static image previews~~
+ - ~~gif previews~~
+ - ~~youtube video previews~~
+ - ~~vimeo video previews~~
+ - short version of post
+ - bnw-specific links (post id, user id, reply id)

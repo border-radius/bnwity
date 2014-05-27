@@ -38,4 +38,8 @@ describe('BNW parser', function () {
   it('should replace links with references', function () {
     bnwity('рейт [ми][*], бнвач\n[*]: https://therailway.ru').should.equal('<p>рейт <a href="https://therailway.ru">ми</a>, бнвач</p>');
   });
+
+  it('should make previews', function () {
+    bnwity('пикча раз: https://server.com/image.jpg\nгифка два: https://server.com/image.gif\nвидос три: http://www.youtube.com/watch?v=JfoGXeksR4M').should.equal('<p>пикча раз: <a href="https://server.com/image.jpg">https://server.com/image.jpg</a></p><p>гифка два: <a href="https://server.com/image.gif">https://server.com/image.gif</a></p><p>видос три: <a href="http://www.youtube.com/watch?v=JfoGXeksR4M">http://www.youtube.com/watch?v=JfoGXeksR4M</a></p><div class="bnwity-previews"><a class="bnwity-image" href="https://server.com/image.jpg"><img src="https://uglyhx.appspot.com/thumb?img=https%3A%2F%2Fserver.com%2Fimage.jpg"></a><a class="bnwity-gif" href="https://server.com/image.gif"><img src="https://uglyhx.appspot.com/thumb?img=https%3A%2F%2Fserver.com%2Fimage.gif"></a><a class="bnwity-youtube" href="http://www.youtube.com/watch?v=JfoGXeksR4M"><img src="https://img.youtube.com/vi/JfoGXeksR4M/0.jpg"></a></div>');
+  });
 });
